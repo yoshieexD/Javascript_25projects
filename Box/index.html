@@ -38,7 +38,7 @@
     <input type="text" id="width">
     Height:
     <input type="text" id="height">
-    Border:
+    Border-radius:
     <input type="text" id="border">
     </div>
 
@@ -48,11 +48,12 @@
         const height = document.getElementById("height");
         const border = document.getElementById("border");
         const box = document.querySelector(".box");
+        
         function manipulate(){
           box.style.backgroundColor = bgcolor.value;
           box.style.width = width.value +"px";
           box.style.height = height.value + "px";
-          box.style.border = border.value;
+          box.style.borderRadius = border.value + "px";
         }
 
         bgcolor.addEventListener("input", manipulate);
